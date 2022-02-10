@@ -1,4 +1,5 @@
 public class Selection implements Sorting{
+    private String name = "Selection sort";
 
     @Override
     public void sort(int[] array) {
@@ -19,9 +20,13 @@ public class Selection implements Sorting{
 
     @Override
     public void printArray(int[] array) {
-        System.out.println();
         for(int i = 0; i <array.length; i++){
             System.out.print(array[i] + ", ");
         }
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }

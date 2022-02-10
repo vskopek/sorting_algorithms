@@ -11,4 +11,10 @@ public interface Sorting {
      * @param array Integer to be printed
      */
     void printArray(int[] array);
+
+    /**
+     * Returns name of the sorting algorithm
+     * @return algorithm name
+     */
+    String getName();
 }
