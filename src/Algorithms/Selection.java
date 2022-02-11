@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class Selection implements Sorting{
     private String name = "Selection sort";
 

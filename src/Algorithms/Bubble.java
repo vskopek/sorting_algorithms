@@ -1,3 +1,5 @@
+package Algorithms;
+
 public class Bubble implements Sorting{
     private String name = "Bubble sort";
 

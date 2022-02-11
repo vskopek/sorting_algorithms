@@ -1,3 +1,8 @@
+import Algorithms.Bubble;
+import Algorithms.BubbleOpt;
+import Algorithms.Selection;
+import Algorithms.Sorting;
+
 public class Main {
 
     static void testSorting(Sorting sortAlgorithm, int[] array){
