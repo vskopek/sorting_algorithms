@@ -1,7 +1,4 @@
-import Algorithms.Bubble;
-import Algorithms.BubbleOpt;
-import Algorithms.Selection;
-import Algorithms.Sorting;
+import Algorithms.*;
 
 public class Main {
 
@@ -15,7 +12,7 @@ public class Main {
         System.out.println("\nSorted array:");
         sortAlgorithm.printArray(array);
         System.out.println("\nTook : "  + (t/Math.pow(10, 6)) + "ms");
-        System.out.println("\n-----------------------------------------");
+        System.out.println("-----------------------------------------");
     }
 
     static int[] returnRandomArray(int lengthMin, int lengthMax, int elementRandomness){
@@ -40,11 +37,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] array = returnRandomArray(10, 20, 50);
+        int[] array = returnRandomArray(10, 500, 50);
 
         testSorting(new Bubble(), copyArray(array));
         testSorting(new Selection(), copyArray(array));
         testSorting(new BubbleOpt(), copyArray(array));
+        testSorting(new Insertion(), copyArray(array));
 
     }
 }
